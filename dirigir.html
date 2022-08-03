@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirigir</title>
+
+    <script>
+        function pulaLinha(){
+            document.write("<br> <br>");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idade = parseInt(prompt("Digite a sua idade: "));
+        var cnh = prompt("Tem carteira? Responda S ou N");
+
+        if(idade >= 18 && cnh == 'S'){
+            document.write("Pode dirigir!");
+        }else{
+            document.write("Nao pode digirir!");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

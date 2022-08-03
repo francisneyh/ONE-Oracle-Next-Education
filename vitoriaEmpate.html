@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitória e empate</title>
+
+    <script>
+        function pulaLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var vitorias = parseInt(prompt("Digite o numero de vitorias: ")); //parseInt converte uma string que tenha numero para um numero(number), pois o prompt captura como string
+        var empates = parseInt(prompt("Digite o numero de empates: ")); //parseInt converte uma string que tenha numero para um numero(number), pois o prompt captura como string
+        var pontos = (vitorias * 3) + empates;
+
+        mostra("O total de pontos do meu time é: " + pontos);
+
+        if(pontos > 28){
+            mostra("Seu time esta melhor que o ano passado.")
+        }
+
+        if(pontos < 28){
+            mostra("Seu time esta pior que o ano passado.")
+        }
+
+        if(pontos == 28){
+            mostra("Seu time esta igual ao ano passado.")
+        }
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
