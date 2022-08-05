@@ -5,15 +5,20 @@
     <button>Compare o segredo</button>  
 
     <script>
-        var segredo = 5;
+        //var segredo = 5;
+        var segredo = Math.round(Math.random() * 10);
         var input = document.querySelector("input");
+        input.focus(); //o focus foca/vai para a caixa de entrada(input)
 
         function verifica(){
-            if(input.value == segredo){
+            if(input.value == segredo){ //se o valor do input for igual o do segredo exibe a resposta do IF
                 alert("Voce ACERTOU!");
             }else{
                 alert("Voce ERROU!");
             }
+
+            input.value = ""; //preenche o input com texto(value) vazio
+            input.focus(); //o focus foca/vai para a caixa de entrada(input)
         }
 
         var button = document.querySelector("button");
